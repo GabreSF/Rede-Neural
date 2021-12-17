@@ -28,6 +28,7 @@ x_imove_treinamento.shape, y_imove_treinamento.shape
 x_imove_teste.shape, y_imove_teste.shape
 
 """**Realizando as gerações do treinamento da Rede Neural**"""
+"""**Conducting Generations of Neural Network Training**"""
 
 rede_neural_imove = MLPClassifier(max_iter=332, verbose=True, tol=0.0000100,
                                    solver = 'adam', activation = 'relu',
@@ -40,6 +41,7 @@ previsoes
 y_imove_teste
 
 """**Resultado do accuracy da nossa rede**"""
+"""**Result of the accuracy of our network**"""
 
 from sklearn.metrics import accuracy_score, classification_report
 accuracy_score(y_imove_teste, previsoes)
@@ -52,3 +54,4 @@ cm.score(x_imove_teste, y_imove_teste)
 print(classification_report(y_imove_teste, previsoes))
 
 """**Obtivemos um acerto de previssões de 100%**"""
+"""**We achieved 100% prediction accuracy**"""
